@@ -69,7 +69,7 @@ def precipitation():
     filter(Measurement.date >= prev_year).all()
    precip = {date: prcp for date, prcp in precipitation}
    return jsonify(precip)
-
+   
 #################################################
 # Stations Route
 ## We use 'ravel' to unravel our results into one-dimensional arrays.
